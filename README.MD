@@ -21,7 +21,8 @@ proszę się stosować do poleceń IDE.
 
     Plik build.gradle należy uzupełnić następująco:
 
-    	
+
+    ```	
     buildConfigField "String", "API_URL", "\"https://api.trello.com/1\""
     buildConfigField "String", "BOARD_ID", "\"placeholder\"" //Krótkie ID tablicy My_Board
     buildConfigField "String", "BOARD_ID_API", "\"placeholder\""
@@ -30,12 +31,13 @@ proszę się stosować do poleceń IDE.
     //Klucz aplikacji
     buildConfigField "String", "TOKEN", "\"placeholder\""
     // Token aplikacji otrzymany po wejściu na:
-    // https://trello.com/1/authorize?key=[klucz aplikacji]&name=TroelloApp&expiration=never&response_type=token&scope=read,write
+    // https://trello.com/1/authorize?key=[klucz     aplikacji]&name=TroelloApp&expiration=never&response_type=token&scope=read,write
     // gdzie [klucz aplikacji] zastępujemy kluczem aplikacji (APP_KEY)
     buildConfigField "String", "LIST_1", "\"placeholder\"" //  ID listy To do
     buildConfigField "String", "LIST_2", "\"placeholder\"" // ID listy Doing
     buildConfigField "String", "LIST_3", "\"placeholder\"" // ID listy Done
-
+    ```
+    
 Należy zwrócić uwagę na wartości muszą się znajdować w takim: "\"WARTOŚĆ\"" ciągu znaków.
 
 ##Obsługa apliakcji
