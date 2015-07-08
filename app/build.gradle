@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.databinding'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'me.tatarka.holdr'
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "radomski.edu.pl.trelloapp"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_URL", "\"https://api.trello.com/1\""
+        buildConfigField "String", "BOARD_ID", "\"placeholder\"" //Krótkie ID tablicy My_Board
+        buildConfigField "String", "BOARD_ID_API", "\"placeholder\""
+        //Długie ID tablicy My_Board
+        buildConfigField "String", "APP_KEY", "\"placeholder\""
+        //Klucz aplikacji
+        buildConfigField "String", "TOKEN", "\"placeholder\""
+        // Token aplikacji otrzymany po wejściu na:
+        // https://trello.com/1/authorize?key=[klucz aplikacji]&name=TroelloApp&expiration=never&response_type=token&scope=read,write
+        // gdzie [klucz aplikacji] zastępujemy kluczem aplikacji (APP_KEY)
+        buildConfigField "String", "LIST_1", "\"placeholder\"" //  ID listy To do
+        buildConfigField "String", "LIST_2", "\"placeholder\"" // ID listy Doing
+        buildConfigField "String", "LIST_3", "\"placeholder\"" // ID listy Done
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile('com.android.support:appcompat-v7:22.2.0') {
+//        exclude module: 'support-v4'
+    }
+    compile 'com.android.support:support-annotations:22.2.0'
+    compile('com.android.support:design:22.2.0') {
+//        exclude module: 'support-v4'
+    }
+    compile('com.android.support:recyclerview-v7:22.2.0') {
+//        exclude module: 'support-v4'
+    }
+
+    compile 'io.reactivex:rxandroid:0.25.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
+    compile 'com.google.dagger:dagger:2.0'
+    provided 'com.google.dagger:dagger-compiler:2.0'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2') {
+//        exclude group: 'org.hamcrest'
+//        exclude group: 'javax.inject'
+    }
+    androidTestCompile 'com.android.support.test:runner:0.3'
+}
