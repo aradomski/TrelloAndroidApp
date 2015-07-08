@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:holdr_superclass="android.support.v7.widget.RecyclerView.ViewHolder">
+
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sheet_padding"
+        android:paddingRight="@dimen/sheet_padding"
+        android:paddingTop="@dimen/sheet_padding" />
+
+    <TextView
+        android:id="@+id/card_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sheet_padding" />
+
+
+</LinearLayout>

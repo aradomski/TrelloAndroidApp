@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HoldrConfigs">
+    <option name="configs">
+      <map>
+        <entry key="app">
+          <value>
+            <SavedHoldrConfig>
+              <option name="defaultInclude" value="true" />
+              <option name="holdrPackage" value="radomski.edu.pl.trelloapp.holdr" />
+              <option name="manifestPackage" value="radomski.edu.pl.trelloapp" />
+            </SavedHoldrConfig>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
