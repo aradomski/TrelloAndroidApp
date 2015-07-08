@@ -41,7 +41,7 @@ proszę się stosować do poleceń IDE.
 Należy zwrócić uwagę na wartości muszą się znajdować w takim: "\"WARTOŚĆ\"" ciągu znaków.
 
 ##Obsługa apliakcji
-Prawidłowo skonfigurowana aplikacja uruchomiona na telefonie powinna wyświetlić listę "Doing" na pierwszym ekranie. Gestami swipe można przechodzić pomiędzy kolejnmi listami.
+Prawidłowo skonfigurowana aplikacja uruchomiona na telefonie powinna wyświetlić listę "Doing" na pierwszym ekranie. Gestami swipe można przechodzić pomiędzy kolejnymi listami.
 
 Krótkie dotknęcie karty powoduje otwarcie okna edycji karty.
 
